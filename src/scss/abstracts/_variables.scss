@@ -1,0 +1,55 @@
+  
+  
+/* title */
+:root{
+    /* titulos*/
+    --sizeTextt1: 70px; 
+    --sizeTextt2: 36px;
+    --sizeTextt3: 22px;
+    --sizeTextt4: 20px;
+
+      /* Parrafos */
+    --sizeTextp1: 15px;
+    --sizeTextp2: 16px;
+    --sizeTextp3: 17px;
+    --sizeTextp4: 18px;
+    --sizeTextp5: 19px;
+
+    /* margin viewport principal */
+    --container-width:72%;
+    --main-maxwidth:1536px;
+  }
+
+  
+  /* COLORS */
+  $color-prim: #3C2D88; 
+  $color-sec: #FBE925;      
+  $color-third: #767676;
+  $color-fourth: #000000;
+  $color-fifth : #ffffff;
+  $color-purpleblack: #322C5C;
+  $color-orange: #F97F08;
+  $color-white-alter: #FCFBFC;
+  $color-bg1: #F4F8FF;
+    /*Transparent*/
+  $color-text-altt: rgba(5, 197, 191, 0.322);
+  $color-altt: rgba(180, 180, 180, 0.349);
+
+  
+  $font1: 'Roboto', sans-serif;
+  $font2: 'Poppins', sans-serif;
+  
+
+
+  /* breakpoint */
+  $small:480px;
+  $small2:375px;
+  $medium:768px;
+  $medium2:720px;
+
+  /*box shadows*/
+
+  $shadow1: 0 9px 54px 0 rgba(32, 32, 32, 0.1);
+
+  /* Routes */
+  $border-dot-white: '../images/shapes/border-dot-white.png'

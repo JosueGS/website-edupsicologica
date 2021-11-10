@@ -1,0 +1,49 @@
+.header{
+    // background-color: yellow;
+    &-nav{
+        padding: 20px 0;
+
+        &-logo{
+            background-color: $color-prim;
+            padding: 10px;
+        }
+    }
+
+    &-nav-list{
+        gap: 20px;
+        font-family: $font2;
+        font-weight: 500;
+        a{
+            color: $color-fourth;
+        }
+    }
+}
+.top-date{
+    // padding: 10px 0;
+    // background-color: yellowgreen;
+    padding: 20px 0;
+    border-bottom: 1px solid $color-altt;
+    
+    &-left, &-right{
+        gap: 15px;
+    }
+    p{
+        color: $color-fourth ;
+        font-size: var(--sizeTextp1);
+    }
+    i{
+        color: $color-prim;
+        font-size: 20px;
+    }
+
+    &-phone, &-email, &-request, &-search{
+        gap: 10px;
+    }
+}
+
+.line-v{
+    width: 1px;
+    display: block;
+    height: 20px;
+    background-color: $color-altt;
+}
