@@ -1,0 +1,47 @@
+// Articulos blog
+
+.barticle{
+    &-main{
+        gap: 40px;
+        padding: 80px 0;
+    }
+
+    &-info{
+        p{
+            line-height: 1.5;
+            margin:0 0 27px 0;
+        }
+    }
+
+    &-figure{
+        img{
+            border-radius:18px ;
+        }
+        margin: 0 0 30px 0;
+    }
+
+    &-title{
+        font-size: var(--sizeBlog);
+        margin: 0 0 27px 0;
+    }
+    
+    &-subtitles{
+        font-size: var(--sizeTextt3);
+        margin: 0 0 27px 0;
+    }
+
+    &-figureItem{
+        gap: 30px;
+        margin: 0 0 27px 0;
+        img{
+            border-radius: 15px;
+        }
+    }
+
+    &-blockq{
+        margin: 0 0 27px 0;
+        border: 1px solid $color-altt;
+        border-radius: 15px;
+    }
+
+}
