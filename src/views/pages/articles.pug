@@ -25,11 +25,11 @@ block main
                             img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-details.jpg", alt="")
                         h2.barticle-title The Current State Of Artificial Intelligence Infographic
                         p lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class thaptent taciti sociosqu ad litora torquent per. conubia nostra, per inceptos himenaeos.
-                        ul
-                            li Advance Advisory Team
-                            li Many variations of passages
-                            li Advance Quality Experts  
-                            li High-Quality Results
+                        //- ul
+                        //-     li Advance Advisory Team
+                        //-     li Many variations of passages
+                        //-     li Advance Quality Experts  
+                        //-     li High-Quality Results
                         p Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris.
 
                         blockquote.barticle-blockq
@@ -37,7 +37,7 @@ block main
                             span -- David Joe
                         
                         h3.barticle-subtitles The Rutrum Ullamcorper Mattis
-                        p Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class thaptent taciti sociosqu ad litora torquent per. conubia nostra, per inceptos himenaeos.
+                        p Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class thaptent taciti sociosqu ad litora torquent per. conubia nostra, per inceptos himenaeos. 
 
                         h3.barticle-subtitles The Stand Lorem Ipsum Passage
                         p Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulp theutate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class thaptent taciti sociosqu ad litora torquent per. conubia nostra, per inceptos himenaeos.
@@ -56,81 +56,101 @@ block main
                         h3 
                             | Comments
                             span (02)
-                        .commentsA
-                            .commentsA-item
+                        .commentsA-content
+                            .commentsA-item.flex-b
                                 figure 
                                     img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-author-1.jpg", alt="")
-                                .commentsA-content
-                                    .commentsA-header
-                                        .commentsA-date
+                                //- commentsA-item content
+                                .commentsA-Icontent
+                                    .commentsA-Iheader.flex-b
+                                        .commentsA-Idate
                                             h4 Jennifer Andrew
                                             span 3 weeks ago
-                                        button Reply
+                                        button.btn.btn-comments Reply
                                     p Lorem ipsum dolor sit amet, consetetur sa dipscing elitr, sed diam nonumy ser irmodey tey mporep invidunt ut laboredi et dolore ma gna aliquyam.
-                                .commentsA-content
-                                    .commentsA-header
-                                        //- comment-title
-                                        .commentsA-date
+                            .commentsA-item.flex-b
+                                figure 
+                                    img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-author-1.jpg", alt="")
+                                //- commentsA-item content
+                                .commentsA-Icontent
+                                    .commentsA-Iheader.flex-b
+                                        .commentsA-Idate
                                             h4 Jennifer Andrew
                                             span 3 weeks ago
-                                        button Reply
+                                        button.btn.btn-comments Reply
                                     p Lorem ipsum dolor sit amet, consetetur sa dipscing elitr, sed diam nonumy ser irmodey tey mporep invidunt ut laboredi et dolore ma gna aliquyam.
-                            .commentsA-message
-                                h3 Leave A Comment
-                                form().commentsA-form
-                                    input(type="text", placeholder="Tu Nombre*")
-                                    input(type="email", placeholder="Tu Email*")
-                                    //- textarea#(cols="30", rows="10", placeholder="Tu comentario") 
-                                    .commentsA-acept
-                                        input(type="checkbox", name="checkc")
-                                        label(for="checkc") Save my name and email in this browser for the next time I comment.
-                                    button(type="submit") Send a Comment
+                    //- comments form
+                    section.commentsf
+                        h3 Leave A Comment
+                        form.commentsf-main
+                            input(type="text", placeholder="Tu Nombre*")
+                            input(type="email", placeholder="Tu Email*")
+                            textarea(cols="30", rows="10", placeholder="Tu comentario") 
+                            .commentsf-check.flex
+                                input#checkterm(type="checkbox", name="checkc")
+                                label(for="checkterm") Save my name and email in this browser for the next time I comment.
+                            button.btn.btn-comments(type="submit") Send a Comment
+
                 section.barticle-navoptions
-                    article.searchA
-                        .searchA-content
-                            .searchA-main
+                    //- search form
+                    article.searchf
+                        .searchf-content.flex
                                 input(type="text", placeholder="Buscar")
-                                button(type="submit") S
+                                button.flex-v(type="submit", title="Buscar")
+                                    <i class="fas fa-search"></i>
                     article.barticle-autor
                         p “Proin gravida nibh vel velit auctor aliquet nean sollicitudin.Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.Proin vel velit auctor aliquet Aenean sollicitudin.”
-                        .barticle-autor-perfil
+                        .barticle-autor-perfil.flex
                             figure 
                                 img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-author-1.jpg", alt="")
-                            h4 Jonson Mandel
-                            span Los Angel
+                            .barticle-autor-date
+                                h4 Jonson Mandel
+                                span Los Angel
                     article.barticle-recent
-                        a.barticle-recent-item
+                        h3 Recientes
+                        a.barticle-recent-item.flex
                             figure 
                                 img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-8.jpg", alt="")
                             
                             .barticle-recent-date
-                                h5 The Current State Of Artificial Intelligence Infographic
+                                h4 The Current State Of Artificial Intelligence Infographic
                                 span January 24, 2021
-                        a.barticle-recent-item
+                        a.barticle-recent-item.flex
                             figure 
                                 img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-8.jpg", alt="")
                             
                             .barticle-recent-date
-                                h5 The Current State Of Artificial Intelligence Infographic
+                                h4 The Current State Of Artificial Intelligence Infographic
                                 span January 24, 2021
-                        a.barticle-recent-item
+                        a.barticle-recent-item.flex
                             figure 
                                 img(src="https://templates.envytheme.com/erudex/default/assets/images/blogs/blog-8.jpg", alt="")
                             
                             .barticle-recent-date
-                                h5 The Current State Of Artificial Intelligence Infographic
+                                h4 The Current State Of Artificial Intelligence Infographic
                                 span January 24, 2021
-                    article.categories
+                    article.nav-categories
+                        h3 Categorias
                         ul
-                            li
+                            li.flex-b
                                 a(href="") Technology
-                                span (02)
-                            li
-                                a(href="") Technology
-                                span (02)
-                            li
-                                a(href="") Technology
-                                span (02)
-                            li
-                                a(href="") Technology
-                                span (02)
+                                span 02
+                            li.flex-b
+                                a(href="") Machine Learning
+                                span 02
+                            li.flex-b
+                                a(href="") Development
+                                span 02
+                            li.flex-b
+                                a(href="") IT
+                                span 02
+
+    .section.banner2
+        .container
+            .st-title-top.flex-v
+                h2 Subscribe For Newsletter
+                p Subscribe To Our Newsletter & Stay Updated
+            form.form-suscribe(action="").flex-c 
+                .form-item.flex-b
+                    input.input-suscribe(type="email", placeholder="Ingresa tu email*")
+                    button.btn(type="submit") Suscribirse

@@ -1,0 +1,65 @@
+.commentsf{
+    padding: 25px 0;
+    h3{
+        font-size: var(--sizeTextt3);
+        margin: 0 0 25px 0;
+    }
+
+    &-main{
+        input, textarea{
+            border-radius: 18px;
+            border: 1px solid $color-altt;
+            padding: 16px;
+            font-size: 15px;
+            width: 100%;
+            background-color: $color-bg1;
+            margin: 0 0 17px 0;
+        }
+        button{
+            padding: 18px 40px;
+            font-weight: 600;
+        }
+    }
+
+    &-check{
+        margin: 0 0 17px 0;
+        input{
+            width: initial;
+            margin: 0 10px 0 0;
+        }
+    }
+
+
+}
+
+.searchf{
+    background-color: violet;
+    padding: 28px;
+    border-radius: 10px;
+    margin: 0 0 27px 0;
+    &-content{
+        position: relative;
+        input{
+            border-radius: 8px;
+            padding:0  15px;
+            width: 100%;
+            background-color: $color-fifth;
+            height: 50px;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 50px;
+            width: 50px;
+            // padding: 15px;
+            background-color: $color-prim;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            i{
+                color: $color-fifth;
+                // font-size: 18px;
+            }
+        }
+    }
+}
