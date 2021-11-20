@@ -1,0 +1,65 @@
+extends ../templates/template.pug
+
+//- contact
+
+block main
+    section.bannerHeader
+        .container
+            .st-title-top2.flex-v
+                h2 Contacto
+                ul.flex
+                    li 
+                        a(href="index.html") Inicio
+                    li >>
+                    li Contacto
+    section.contact
+        .container
+            .st-title-top.flex-v
+                span Contact Information
+                h2 Let's Talk About For Your Business
+                p Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            .contact-main.flex-b
+                .contact-item.flex
+                    .contact-item-icon.flex-v
+                        <i class="fas fa-map-marker-alt"></i>
+                    .contact-item-title.flex-v
+                        h4 Location
+                        span Visit Our Office
+                    .contact-item-content
+                        p 214, Queens Road 4th Cross
+                        p New York, 5240
+                .contact-item.flex
+                    .contact-item-icon.flex-v
+                        <i class="fas fa-map-marker-alt"></i>
+                    .contact-item-title.flex-v
+                        h4 Location
+                        span Visit Our Office
+                    .contact-item-content
+                        p 214, Queens Road 4th Cross
+                        p New York, 5240
+                .contact-item.flex
+                    .contact-item-icon.flex-v
+                        <i class="fas fa-map-marker-alt"></i>
+                    .contact-item-title.flex-v
+                        h4 Location
+                        span Visit Our Office
+                    .contact-item-content
+                        p 214, Queens Road 4th Cross
+                        p New York, 5240
+
+            section.contact-box2.flex-b
+                .box2-map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13285.856305754727!2d-79.0222937093805!3d-8.110777446967482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1637357423950!5m2!1ses!2spe" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                .box2-form.commentsf
+                    h3 Leave A Comment
+                    form.commentsf-main
+                        input(type="text", placeholder="Nombre*")
+                        input(type="email", placeholder="Email*")
+                        input(type="text", placeholder="Celular*")
+                        input(type="text", placeholder="Tema*")
+                        textarea(cols="30", rows="10", placeholder="Mensaje") 
+                        .commentsf-check.flex
+                            input#checkterm(type="checkbox", name="checkc")
+                            label(for="checkterm") Accept Terms of Service and Privacy Policy
+                        button.btn.btn-comments(type="submit") Enviar
+
